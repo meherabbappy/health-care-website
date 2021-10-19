@@ -1,52 +1,34 @@
 import React from "react";
-import { Carousel,} from "react-bootstrap";
-import "./Banner.css"
+import { Button, Col, Row } from "react-bootstrap";
+import "./Banner.css";
 
 const Banner = () => {
   return (
-    <div className = "containers">
+    <div className="containers">
+      <Row className="header-all">
+        <Col xs={12} lg={6}>
+          <div className="home-description">
+            <h1 className="title">
+              What's a good doctor and how do you make one? Doctors should be
+              good companions for people
+            </h1>
+            <p className="p-title">
+            A good doctor is not one who cures the most because in many specialties recovery is not a frequent outcome. It is not one who makes the best diagnosis because in many cases of self limited or incurable disorders the precise and timely diagnosis does not make a great difference for the patient. 
+            </p>
+            <Button className="google-btn p-3">Visit Our Hospital</Button>
+          </div>
+        </Col>
 
-<Carousel>
-  <Carousel.Item>
-    <img
-      className="w-100 img-fluid"
-      // style = {{height:"95vh"}}
-      src="https://website-api.doctorshosp.com/storage/images/banners/find-a-doctor.jpg"
-      alt="First slide"
-    />
-    <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      style = {{height:"95vh"}}
-      src="https://thumbs.dreamstime.com/b/healthcare-medical-concept-medicine-doctor-stethoscope-hand-patients-come-to-hospital-background-179931139.jpg"
-      alt="Second slide"
-    />
-
-    <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      style = {{height:"95vh"}}
-      src="https://website-api.doctorshosp.com/storage/images/pages_banners/BndacrhCaBoNkseII5JLxUmUnNPiDqHxdzAsm6Gh.jpeg"
-      alt="Third slide"
-    />
-
-    <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-</Carousel>
-
+        <Col xs={12} lg={6}>
+          <div className="home-image">
+            <img
+              src="https://st3.depositphotos.com/9401596/14801/v/600/depositphotos_148016559-stock-illustration-medical-characters-doctors-and-nurses.jpg"
+              style={{ width: "100%" }}
+              alt=""
+            />
+          </div>
+        </Col>
+      </Row>
     </div>
   );
 };

@@ -5,9 +5,6 @@ import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import useAuth from '../../hooks/useAuth';
 
-
-
-
 const Header = () => {
     const { user, logOut } = useAuth()
     return (
@@ -15,7 +12,7 @@ const Header = () => {
         <>
             <Navbar collapseOnSelect expand="lg" bg="dark" sticky="top" variant="dark">
                 <Container>
-                    <Navbar.Brand href="/home">Medica Zone</Navbar.Brand>
+                    <Navbar.Brand href="/home">Health Zone</Navbar.Brand>
 
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">

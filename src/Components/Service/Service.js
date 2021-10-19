@@ -23,7 +23,7 @@ const Service = ({service}) => {
                 
                 
                 <Link className = "p-3" to ={`/servicedetails/${id}`}>
-                <button className = "btn btn-primary mx-auto">Details</button>
+                <button className = "btn1  mx-auto">Details</button>
                 </Link>
             
             </div>
